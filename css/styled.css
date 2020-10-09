@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+font-family:SansitaSwashed-Regular;
+src: url(..image/SansitaSwashed-Regular.ttf);
+  }
+ body {
+  background-image:url(../image/background.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  font-family:"SansitaSwashed-Regular.ttf";
+}
+
+#content {
+  background: white;
+  width: 400px;
+  margin: auto;
+  text-align:center;	
+}
+#eightBall {
+   width: 350px;
+   height: 350px;
+   background: black;
+   color: white;
+   margin: auto;
+   margin-top: 10px;
+   border-radius: 100%;
+   display: grid;
+   justify-content: center;
+   align-items: center;	
+   box-shadow: inset 20px 20px 30px rgba(255,255,255);
+   animation: .8s shake infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+
+}
+#answer  {
+	  font-size: 25px;
+	  border-radius: 50%;
+	  padding:40px;
+	  background-color:#CCC;
+	  color:#000;
+  
+}
+
+
+
